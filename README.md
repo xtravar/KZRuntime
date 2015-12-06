@@ -11,8 +11,8 @@ Also, to do accomplish the impossible, which is kind of fun.
 ## Dependencies
 
 - [KZTypeReflection](https://github.com/xtravar/KZTypeReflection) - introspects both the ObjC and Swift type runtimes
-- (KZSwiftBridging](https://github.com/xtravar/KZSwiftBridging) - helps with NSValue/NSNumber conversions
-- (SwiftFFI)[https://github.com/xtravar/SwiftFFI] - ONLY if you are feeling particularly dangerous and compile with the danger flag
+- [KZSwiftBridging](https://github.com/xtravar/KZSwiftBridging) - helps with NSValue/NSNumber conversions
+- [SwiftFFI](https://github.com/xtravar/SwiftFFI) - ONLY if you are feeling particularly dangerous and compile with the danger flag
 
 ## Basics - API
 The API is modeled somewhat after C#'s reflection system.  To get a handle for a type's information, you use `let typeInfo = KZRuntime.sharedRuntime.registerType(MyClass.self) as! ClassInfo`
