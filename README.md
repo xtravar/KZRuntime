@@ -20,7 +20,7 @@ The API is modeled somewhat after C#'s reflection system.  To get a handle for a
 Notice this is a singleton, but does not exclude you from creating your own runtime with different parameters, if necessary, later.
 
 Once you have a TypeInfo instance, you can do things like: 
-```
+```swift
   let prop = classInfo.propertyNamed("doubleProp")
   let value = Double(202)
   prop.set(testObject, value: value)
@@ -43,7 +43,7 @@ You'll have to find the compiler option for this. :)
 You can use Objective-C getters/setters with aided Swift type information. This is my preference, and is what is verified working at the moment.  It uses the Objective-C dynamic runtime getters/setters, along with information from KZTypeReflection, along with bridging from KZSwiftBridging, to perform its duties.
 
 Objective-C bridged types are supported under this system, as are certain 'aided' types.  For example:
-```
+```swift
 class Test1: NSObject {
     var intProp = Int()
     var uintProp = UInt()
